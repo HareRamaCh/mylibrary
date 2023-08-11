@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>The Library</h1>
+  <section class="book-container">
+    
+  </section>
+
+  <section class="add-book-container">
+    <button class="add-book">+ Add Book</button>
+  </section>
+
+  <section class="modal-container">
+    <div id="myModal" class="modal">
+      <form name="add-book-form" id="add-book-form">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2>Book details</h2>
+        <div class="form-row">
+          <input type="text" id="title" placeholder="Book title" name="book_title" aria-label="Book Title" required>
+        </div>
+        <div class="form-row">
+          <input type="text" id="author" placeholder="Author's name" name="book_author" aria-label="Book Author"
+            required>
+        </div>
+        <div class="form-row">
+          <input type="number" id="pages" placeholder="Number of pages" name="book_pages" aria-label="Number of Pages"
+            required>
+        </div>
+
+        <div class="form-row form-row-check">
+          <label for="read">Read the book?</label>
+          <input type="checkbox" id="read" name="book_read" value="Yes" aria-label="Have you read the book?">
+        </div>
+        <div class="form-row">
+          <button type="submit" name="submit" class="add-book">Submit</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
